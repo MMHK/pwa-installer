@@ -96,7 +96,7 @@ const config = {
 		chunkFilename: 'js/[name].js',
 		filename: 'js/[name].js',
 		assetModuleFilename: 'assets/[hash][ext][query]',
-		publicPath: "auto",
+		publicPath: isDevServer ? "auto" : '/pwa-installer/',
 	},
 
 	resolve: {
@@ -286,7 +286,7 @@ const pwaConfig = [
 		devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default
 		prefix: '',
 		outputPath: `assets/favicon`,
-		publicPath: `/assets/favicon`,
+		publicPath: isDevServer ? `/assets/favicon` : `/pwa-installer/assets/favicon`,
 		favicons: {
 			start_url: "/",
 			appName: 'PWA installer Demo',

@@ -7008,7 +7008,8 @@ if ('serviceWorker' in navigator) {
       registration && registration.unregister();
     });
   } else {
-    navigator.serviceWorker.register('/service-worker.js');
+    var swPath = env__WEBPACK_IMPORTED_MODULE_1__["default"].IS_DEVELOPMENT ? '/service-worker.js' : '/pwa-installer/service-worker.js';
+    navigator.serviceWorker.register(swPath);
   }
 }
 }();
