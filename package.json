@@ -1,0 +1,57 @@
+{
+  "name": "pwa-installer",
+  "version": "1.0.0",
+  "description": "vue component for PWA install screen",
+  "main": "index.js",
+  "repository": "https://github.com/MMHK/pwa-installer.git",
+  "author": "MMHK <sam@mixmedia.com>",
+  "license": "Apache-2.0",
+  "private": false,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "serve": "cross-env NODE_ENV=development FRP_ENDPOINT=192.168.33.6 FRP_PUBLIC_DOMAIN=dev.mixmedia.com webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/plugin-transform-template-literals": "^7.10.3",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/runtime": "^7.10.4",
+    "autoprefixer": "^9.8",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "core-js": "3",
+    "cross-env": "^7.0.2",
+    "css-loader": "^6.7.3",
+    "favicons": "^7.1.2",
+    "favicons-webpack-plugin": "^6.0.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "inquirer": "^6.5",
+    "mini-css-extract-plugin": "^2.7.5",
+    "mmhk-frp": "^1.1.0",
+    "postcss-loader": "^7.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.59",
+    "sass-loader": "^13.2.0",
+    "string.prototype.matchall": "^4.0.0",
+    "style-loader": "^3.3.2",
+    "url-loader": "^4.1.1",
+    "vue-loader": "^15",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^5.76.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.0",
+    "workbox-webpack-plugin": "^6.5.4"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1",
+    "vue": "^2.7"
+  },
+  "browserslist": [
+    "last 5 version",
+    "> .5%"
+  ]
+}
